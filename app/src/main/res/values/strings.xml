@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">runner</string>
+    <string name="title_plan">План</string>
+    <string name="title_statistics">Статистика</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_run">Бег</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_run"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+        android:title="@string/title_run" />
+    <item
+        android:id="@+id/navigation_plan"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/title_plan" />
+
+    <item
+        android:id="@+id/navigation_statistics"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:title="@string/title_statistics" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/title_profile" />
+
+</menu>
