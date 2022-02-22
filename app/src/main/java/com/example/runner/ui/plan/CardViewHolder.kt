@@ -1,4 +1,4 @@
-package com.example.runner
+package com.example.runner.ui.plan
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.runner.databinding.PlanCardBinding

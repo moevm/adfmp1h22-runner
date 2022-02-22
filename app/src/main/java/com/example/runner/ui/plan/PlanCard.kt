@@ -1,4 +1,4 @@
-package com.example.runner
+package com.example.runner.ui.plan
 
 var planCardList = mutableListOf<PlanCard>()
 

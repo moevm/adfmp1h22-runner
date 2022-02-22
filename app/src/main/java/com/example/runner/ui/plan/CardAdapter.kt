@@ -1,10 +1,8 @@
-package com.example.runner.ui
+package com.example.runner.ui.plan
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.runner.CardViewHolder
-import com.example.runner.PlanCard
 import com.example.runner.databinding.PlanCardBinding
 
 class CardAdapter(
