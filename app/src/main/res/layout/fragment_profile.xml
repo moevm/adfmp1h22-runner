@@ -12,7 +12,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="8dp">
 
         <ImageView
             android:id="@+id/profile_image"
@@ -22,20 +24,32 @@
             android:src="@drawable/profile" />
 
         <TextView
+            android:paddingStart="8dp"
             android:id="@+id/textView9"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="Виктория" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/super_yellow"
+            android:text="Виктория"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="change profile"
+            android:src="@drawable/ic_baseline_edit_24" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="48dp"
-        android:paddingVertical="16dp">
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="Пол:" />
 
             <TextView
@@ -55,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="Женский"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded" />
@@ -71,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="Возраст:" />
 
             <TextView
@@ -81,7 +95,7 @@
                 android:layout_weight="1"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="17 лет" />
         </LinearLayout>
 
@@ -95,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="Вес:" />
 
             <TextView
@@ -104,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 tools:ignore="RtlHardcoded"
                 android:text="57 кг" />
         </LinearLayout>
@@ -119,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:text="Рост:" />
 
             <TextView
@@ -127,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="16dp"
+                android:textSize="17sp"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded"
                 android:text="173 см" />
@@ -137,7 +151,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/super_yellow"
+        android:background="@color/yellow"
+        android:layout_marginVertical="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp" />
 
@@ -155,19 +170,21 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:textSize="24sp"
+            android:paddingHorizontal="8dp"
             android:text="Достижения" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:text="Пройдено:" />
 
             <TextView
@@ -177,21 +194,22 @@
                 android:layout_weight="1"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:text="3248 м" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:text="Сожжено:" />
 
             <TextView
@@ -200,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 tools:ignore="RtlHardcoded"
                 android:text="150 ккал" />
         </LinearLayout>
@@ -208,14 +226,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:text="Общее время:" />
 
             <TextView
@@ -223,11 +242,52 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded"
                 android:text="1 час" />
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:paddingHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/record_profile_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+
+            android:contentDescription="Рекорд"
+            android:src="@drawable/record" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:textColor="@color/super_yellow"
+                android:text="8%" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="В среднем, вы активнее, чем 8% пользователей" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
