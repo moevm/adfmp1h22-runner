@@ -35,12 +35,11 @@
             android:gravity="center_vertical"
             android:textColor="@color/super_yellow"
             android:text="Виктория"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="NestedWeights,RtlSymmetry" />
 
         <ImageButton
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@null"
             android:contentDescription="change profile"
             android:src="@drawable/ic_baseline_edit_24" />
     </LinearLayout>
@@ -57,7 +56,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
 
             <TextView
                 android:id="@+id/textView2"
@@ -271,7 +271,6 @@
             android:id="@+id/record_profile_image"
             android:layout_width="110dp"
             android:layout_height="110dp"
-
             android:contentDescription="Рекорд"
             android:src="@drawable/record" />
 
@@ -290,7 +289,8 @@
                 android:textStyle="bold"
                 android:gravity="right"
                 android:textColor="@color/super_yellow"
-                android:text="8%" />
+                android:text="8%"
+                tools:ignore="RtlHardcoded" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -299,7 +299,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14sp"
-                android:text="В среднем, вы активнее, чем 8% пользователей" />
+                android:text="В среднем, вы активнее, чем 8% пользователей"
+                tools:ignore="RtlHardcoded" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
