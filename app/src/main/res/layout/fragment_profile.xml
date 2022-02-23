@@ -9,6 +9,7 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_weight="1"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +46,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -54,6 +56,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
@@ -78,6 +81,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
@@ -102,6 +106,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
@@ -125,6 +130,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
@@ -157,6 +163,7 @@
         android:layout_marginRight="16dp" />
 
     <LinearLayout
+        android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -168,14 +175,16 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:textStyle="bold"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:textSize="24sp"
             android:paddingHorizontal="8dp"
-            android:text="Достижения" />
+            android:text="Достижения"
+            tools:ignore="NestedWeights" />
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp">
 
@@ -200,8 +209,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:paddingHorizontal="10dp">
 
             <TextView
@@ -225,8 +235,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:paddingHorizontal="10dp">
 
             <TextView
@@ -250,6 +261,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_weight="2"
         android:paddingHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
