@@ -15,7 +15,8 @@
         <entry key="..\:/runner/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_run.xml" value="0.36666666666666664" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_statistics.xml" value="0.18802083333333333" />
-        <entry key="..\:/runner/app/src/main/res/layout/fragment_training.xml" value="0.19655797101449277" />
+        <entry key="..\:/runner/app/src/main/res/layout/fragment_training.xml" value="0.1" />
+        <entry key="..\:/runner/app/src/main/res/layout/fragment_training_details.xml" value="0.14722222222222223" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_training_statistics.xml" value="0.20572916666666666" />
         <entry key="..\:/runner/app/src/main/res/layout/plan_card.xml" value="0.25" />
         <entry key="..\:/runner/app/src/main/res/layout/training_card.xml" value="0.19655797101449277" />

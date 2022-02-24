@@ -47,5 +47,15 @@
         android:id="@+id/navigation_training_statistics"
         android:name="com.example.runner.ui.statistics.TrainingStatisticsFragment"
         android:label="Тренировка"
-        tools:layout="@layout/fragment_training_statistics" />
+        tools:layout="@layout/fragment_training_statistics" >
+        <action
+            android:id="@+id/action_navigation_training_statistics_to_navigation_training_details"
+            app:destination="@id/navigation_training_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_training_details"
+        android:name="com.example.runner.ui.statistics.TrainingDetailsFragment"
+        android:label="Статистика тренировки"
+        tools:layout="@layout/fragment_training_details" />
 </navigation>
