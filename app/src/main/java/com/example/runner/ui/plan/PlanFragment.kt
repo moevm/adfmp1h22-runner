@@ -1,17 +1,19 @@
 package com.example.runner.ui.plan
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.runner.R
 import com.example.runner.databinding.FragmentPlanBinding
 
 
-class PlanFragment : Fragment() {
+class PlanFragment : Fragment(), PlanClickListener {
     private var _binding: FragmentPlanBinding? = null
     private val binding get() = _binding!!
 
@@ -28,10 +30,14 @@ class PlanFragment : Fragment() {
 
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(requireActivity().application.applicationContext, 1)
-            adapter = CardAdapter(planCardList)
+            adapter = CardAdapter(planCardList, this@PlanFragment)
         }
 
         return binding.root
+    }
+
+    override fun onClick(plan: PlanCard) {
+        view?.findNavController()?.navigate(R.id.action_navigation_plan_to_navigation_training)
     }
 
     private fun populatePlans() {

@@ -7,6 +7,7 @@ import com.example.runner.databinding.PlanCardBinding
 
 class CardAdapter(
     private val plans: List<PlanCard>,
+    private val clickListener: PlanClickListener
 )
     : RecyclerView.Adapter<CardViewHolder>()
 {
@@ -14,7 +15,7 @@ class CardAdapter(
     {
         val from = LayoutInflater.from(parent.context)
         val binding = PlanCardBinding.inflate(from, parent, false)
-        return CardViewHolder(binding)
+        return CardViewHolder(binding, clickListener)
     }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int)
