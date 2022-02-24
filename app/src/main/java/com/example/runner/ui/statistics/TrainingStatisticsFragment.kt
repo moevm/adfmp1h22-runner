@@ -12,7 +12,7 @@ import com.example.runner.ui.plan.PlanCard
 import com.example.runner.ui.plan.planCardList
 
 
-class TrainingStatisticsFragment : Fragment() {
+class TrainingStatisticsFragment : Fragment(), TrainingClickListener {
     private var _binding: FragmentTrainingStatisticsBinding? = null
     private val binding get() = _binding!!
 
@@ -28,10 +28,15 @@ class TrainingStatisticsFragment : Fragment() {
 
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(requireActivity().application.applicationContext, 1)
-            adapter = CardAdapter(trainingCardList)
+            adapter = CardAdapter(trainingCardList, this@TrainingStatisticsFragment)
         }
 
         return binding.root
+    }
+
+
+    override fun onClick(trainingCard: TrainingCard) {
+
     }
 
     private fun populateTrainings() {
