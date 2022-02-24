@@ -1,28 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Введите ваше имя"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:ems="10"
+        android:hint="Пользователь"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText2">
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="80dp"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:contentDescription="Мужчина"
+            android:src="@drawable/man" />
+
+        <ImageView
+            android:id="@+id/woman"
+            android:layout_width="80dp"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:contentDescription="Женщина"
+            android:src="@drawable/woman" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2">
 
         <Button
             android:id="@+id/manButton"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
             android:layout_weight="1"
-            android:background="@color/super_yellow"
+            android:backgroundTint="@color/super_yellow"
             android:text="Мужской" />
 
         <Button
             android:id="@+id/womanButton"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
             android:layout_weight="1"
-            android:background="@color/red"
+            android:backgroundTint="@color/red"
             android:text="Женский" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
