@@ -33,8 +33,7 @@
         tools:layout="@layout/fragment_run" />
     <fragment
         android:id="@+id/navigation_training"
-        android:name="com.example.runner.ui.run.RunFragment"
-        android:label="d"
-        tools:layout="@layout/fragment_training" />
+        android:name="com.example.runner.ui.plan.TrainingFragment"
+        android:label="d" />
 
 </navigation>
