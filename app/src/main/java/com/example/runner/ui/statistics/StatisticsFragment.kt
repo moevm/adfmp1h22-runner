@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.example.runner.R
 import com.example.runner.databinding.FragmentStatisticsBinding
 
 
 class StatisticsFragment : Fragment() {
-
     private var _binding: FragmentStatisticsBinding? = null
     private val binding get() = _binding!!
 
@@ -21,7 +21,10 @@ class StatisticsFragment : Fragment() {
     ): View {
         _binding = FragmentStatisticsBinding.inflate(inflater, container, false)
 
-        binding.statisticButton.setOnClickListener { TODO() }
+        binding.statisticButton.setOnClickListener {
+            view?.findNavController()
+                ?.navigate(R.id.action_navigation_statistics_to_navigation_training_statistics)
+        }
         return binding.root
     }
 

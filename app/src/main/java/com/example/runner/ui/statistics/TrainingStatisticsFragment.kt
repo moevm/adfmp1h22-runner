@@ -1,15 +1,15 @@
-package com.example.runner.ui.run
+package com.example.runner.ui.statistics
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.runner.databinding.FragmentRunBinding
+import com.example.runner.databinding.FragmentTrainingStatisticsBinding
 
 
-class RunFragment : Fragment() {
-    private var _binding: FragmentRunBinding? = null
+class TrainingStatisticsFragment : Fragment() {
+    private var _binding: FragmentTrainingStatisticsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,8 +17,7 @@ class RunFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentRunBinding.inflate(inflater, container, false)
+        _binding = FragmentTrainingStatisticsBinding.inflate(inflater, container, false)
 
         return binding.root
     }

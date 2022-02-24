@@ -1,209 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="4dp"
     android:orientation="vertical"
+    android:padding="4dp"
     tools:context=".ui.statistics.StatisticsFragment">
 
     <TextView
-        android:gravity="center_vertical"
-        android:layout_weight="1"
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_marginHorizontal="8dp"
-        android:text="Итог за всё время" />
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Итог за всё время"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/gray"
-        android:layout_marginVertical="8dp" />
+        android:layout_marginVertical="8dp"
+        android:background="@color/gray" />
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="3248 м"
             android:textColor="@color/red"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:text="3248 м"
             tools:ignore="NestedWeights" />
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:text="с 14 февр. 2022 г." />
+            android:gravity="center_vertical"
+            android:text="с 14 февр. 2022 г."
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20sp"
+            android:gravity="center_vertical"
             android:text="150 ккал"
+            android:textSize="20sp"
             tools:ignore="NestedWeights" />
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="1 час" />
+            android:gravity="center_vertical"
+            android:text="1 час"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/statisticButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:drawableLeft="@drawable/ic_baseline_menu_24"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
         android:text="Статистика тренировок" />
 
     <TextView
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_marginHorizontal="8dp"
-        android:text="Мой обычный день" />
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Мой обычный день"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/gray"
-        android:layout_marginVertical="8dp" />
+        android:layout_marginVertical="8dp"
+        android:background="@color/gray" />
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:textColor="@color/red"
-            android:gravity="center_vertical"
             android:id="@+id/textView9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="28sp"
-            android:text="1624 м" />
+            android:gravity="center_vertical"
+            android:text="1624 м"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView10"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:text="Средн. ежедневное расстояние" />
+            android:gravity="center_vertical"
+            android:text="Средн. ежедневное расстояние"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:textColor="@color/red"
-            android:gravity="center_vertical"
             android:id="@+id/textView11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="28sp"
-            android:text="98 ккал" />
+            android:gravity="center_vertical"
+            android:text="98 ккал"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:text="Средн. ежедневное значение ккал" />
+            android:gravity="center_vertical"
+            android:text="Средн. ежедневное значение ккал"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical"
-        android:layout_weight="1"
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_marginHorizontal="8dp"
-        android:text="Рекорд по расстоянию" />
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Рекорд по расстоянию"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/gray"
-        android:layout_marginVertical="8dp" />
+        android:layout_marginVertical="8dp"
+        android:background="@color/gray" />
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:textColor="@color/red"
-            android:gravity="center_vertical"
             android:id="@+id/textView7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="28sp"
-            android:text="2001 м" />
+            android:gravity="center_vertical"
+            android:text="2001 м"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
 
         <TextView
-            android:gravity="center_vertical"
             android:id="@+id/textView8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:text="15 февр. 2022 г." />
+            android:gravity="center_vertical"
+            android:text="15 февр. 2022 г."
+            android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>
