@@ -3,7 +3,7 @@
     <string name="title_plan">План</string>
     <string name="title_statistics">Статистика</string>
     <string name="title_profile">Профиль</string>
-    <string name="title_run">Бег</string>
+    <string name="title_run">Движение</string>
     <string name="card_text_placeholder">Бег для похудения</string>
     <string name="plan_image">Plan image</string>
 </resources>
