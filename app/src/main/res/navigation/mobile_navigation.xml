@@ -6,26 +6,6 @@
     app:startDestination="@id/navigation_run">
 
     <fragment
-        android:id="@+id/navigation_plan"
-        android:name="com.example.runner.ui.plan.PlanFragment"
-        android:label="@string/title_plan"
-        tools:layout="@layout/fragment_plan">
-        <action
-            android:id="@+id/action_navigation_plan_to_navigation_training"
-            app:destination="@id/navigation_training" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_statistics"
-        android:name="com.example.runner.ui.statistics.StatisticsFragment"
-        android:label="@string/title_statistics"
-        tools:layout="@layout/fragment_statistics">
-        <action
-            android:id="@+id/action_navigation_statistics_to_navigation_training_statistics"
-            app:destination="@id/navigation_training_statistics" />
-    </fragment>
-
-    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.runner.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
@@ -37,25 +17,49 @@
         android:label="@string/title_run"
         tools:layout="@layout/fragment_run" />
 
-    <fragment
-        android:id="@+id/navigation_training"
-        android:name="com.example.runner.ui.plan.TrainingFragment"
-        android:label="Тренировка"
-        tools:layout="@layout/fragment_training" />
-
-    <fragment
-        android:id="@+id/navigation_training_statistics"
-        android:name="com.example.runner.ui.statistics.TrainingStatisticsFragment"
-        android:label="Тренировка"
-        tools:layout="@layout/fragment_training_statistics" >
-        <action
-            android:id="@+id/action_navigation_training_statistics_to_navigation_training_details"
-            app:destination="@id/navigation_training_details" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_training_details"
-        android:name="com.example.runner.ui.statistics.TrainingDetailsFragment"
-        android:label="Статистика тренировки"
-        tools:layout="@layout/fragment_training_details" />
+    <navigation
+        android:id="@+id/navigation_plan_graph"
+        app:startDestination="@id/navigation_plan">
+        <fragment
+            android:id="@+id/navigation_plan"
+            android:name="com.example.runner.ui.plan.PlanFragment"
+            android:label="@string/title_plan"
+            tools:layout="@layout/fragment_plan">
+            <action
+                android:id="@+id/action_navigation_plan_to_navigation_training"
+                app:destination="@id/navigation_training" />
+        </fragment>
+        <fragment
+            android:id="@+id/navigation_training"
+            android:name="com.example.runner.ui.plan.TrainingFragment"
+            android:label="Тренировка"
+            tools:layout="@layout/fragment_training" />
+    </navigation>
+    <navigation
+        android:id="@+id/navigation_statistics_graph"
+        app:startDestination="@id/navigation_statistics">
+        <fragment
+            android:id="@+id/navigation_statistics"
+            android:name="com.example.runner.ui.statistics.StatisticsFragment"
+            android:label="@string/title_statistics"
+            tools:layout="@layout/fragment_statistics">
+            <action
+                android:id="@+id/action_navigation_statistics_to_navigation_training_statistics"
+                app:destination="@id/navigation_training_statistics" />
+        </fragment>
+        <fragment
+            android:id="@+id/navigation_training_details"
+            android:name="com.example.runner.ui.statistics.TrainingDetailsFragment"
+            android:label="Статистика тренировки"
+            tools:layout="@layout/fragment_training_details" />
+        <fragment
+            android:id="@+id/navigation_training_statistics"
+            android:name="com.example.runner.ui.statistics.TrainingStatisticsFragment"
+            android:label="Тренировка"
+            tools:layout="@layout/fragment_training_statistics">
+            <action
+                android:id="@+id/action_navigation_training_statistics_to_navigation_training_details"
+                app:destination="@id/navigation_training_details" />
+        </fragment>
+    </navigation>
 </navigation>
