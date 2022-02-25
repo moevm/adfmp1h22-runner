@@ -79,6 +79,14 @@ class TrainingStatisticsFragment : Fragment(), TrainingClickListener {
             "16.02.2022 в 16:10"
         )
         trainingCardList.add(training7)
+
+        trainingCardList.add(training1)
+        trainingCardList.add(training2)
+        trainingCardList.add(training3)
+        trainingCardList.add(training4)
+        trainingCardList.add(training5)
+        trainingCardList.add(training6)
+        trainingCardList.add(training7)
     }
 
     override fun onDestroyView() {
