@@ -68,6 +68,12 @@ class PlanFragment : Fragment(), PlanClickListener {
             "Мои первые 10 километров"
         )
         planCardList.add(plan5)
+
+        planCardList.add(plan1)
+        planCardList.add(plan2)
+        planCardList.add(plan3)
+        planCardList.add(plan4)
+        planCardList.add(plan5)
     }
 
     override fun onDestroyView() {
