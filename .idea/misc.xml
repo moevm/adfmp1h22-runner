@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/runner/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.196" />
+        <entry key="..\:/runner/app/src/main/res/drawable-hdpi/rounded_corner_button_pressed.xml" value="0.1" />
+        <entry key="..\:/runner/app/src/main/res/drawable/rounded_corner_button.xml" value="0.1" />
         <entry key="..\:/runner/app/src/main/res/layout/activity_auth.xml" value="0.22" />
         <entry key="..\:/runner/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_auth1.xml" value="0.1" />
@@ -13,15 +15,16 @@
         <entry key="..\:/runner/app/src/main/res/layout/fragment_notifications.xml" value="0.35104166666666664" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_plan.xml" value="0.33" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
-        <entry key="..\:/runner/app/src/main/res/layout/fragment_run.xml" value="0.36666666666666664" />
+        <entry key="..\:/runner/app/src/main/res/layout/fragment_run.xml" value="0.1" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_statistics.xml" value="0.18802083333333333" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_training.xml" value="0.1" />
-        <entry key="..\:/runner/app/src/main/res/layout/fragment_training_details.xml" value="0.14722222222222223" />
+        <entry key="..\:/runner/app/src/main/res/layout/fragment_training_details.xml" value="0.1" />
         <entry key="..\:/runner/app/src/main/res/layout/fragment_training_statistics.xml" value="0.20572916666666666" />
         <entry key="..\:/runner/app/src/main/res/layout/plan_card.xml" value="0.25" />
         <entry key="..\:/runner/app/src/main/res/layout/training_card.xml" value="0.19655797101449277" />
         <entry key="..\:/runner/app/src/main/res/layout/training_list_item.xml" value="0.14722222222222223" />
         <entry key="..\:/runner/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
+        <entry key="..\:/runner/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
